@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div id="header__logo-container">
+            <svg id="header__logo" width="6rem" height="3rem" viewBox="0 0 37 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 5 5 L 5 21 L 13 21 C 12 20 12 19 12 18 L 8 18 L 8 6 L 5 5 M 13 15 L 13 18 C 13 20 13 20 14 21 C 15 22 17 22 18 21 C 19 20 19 20 19 18 L 19 15 C 19 11 13 11 13 15 M 16 14 C 17 14 17 15 17 15 L 17 19 C 17 20 16 20 16 20 C 16 20 15 20 15 19 L 15 15 C 15 14 16 14 16 14 M 20 15 L 20 19 C 20 22 27 22 27 19 L 27 17 L 24 17 L 24 18 L 25 18 L 25 19 C 25 20 22 20 22 19 L 22 15 C 22 13 25 13 25 15 L 27 15 C 27 11 20 11 20 15 M 28 15 L 28 19 C 28 23 34 23 34 19 L 34 15 C 34 11 28 11 28 15 M 30 15 C 30 14 32 14 32 15 L 32 19 C 32 20 30 20 30 19 L 30 15">
+            </svg>
+        </div>
+        
+        <div class="header__nav">
+
+            <div class="header__search-bar-container">
+
+                <div id="search-bar__items">
+                    <input id="search-bar__input" type="text" required pattern=".*\S.*"></input>
+                    <span id="search-bar__placeholder">Search for...</span>
+                </div>
+
+                <div id="search-bar__icon">
+                    <svg id="search-icon" width="1rem" height="1rem" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 11 1 C 5 1 1 5 1 11 C 1 16 5 21 11 21 C 17 21 21 16 21 11 C 21 5 17 1 11 1 V 4 C 15 4 18 7 18 11 C 18 15 15 18 11 18 C 7 18 4 15 4 11 C 4 7 7 4 11 4 M 19 17 L 28 26 L 25 29 L 15.775 19.815 C 17.232 18.848 17.625 18.703 18.992 17.006 M 27.998 26.007 C 30.668 28.718 27.626 31.615 24.998 29.007"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="nav__list">
+                <a href="#"><li class="nav__element" id="nav__about">About</li></a>
+                <a href="#"><li class="nav__element" id="nav__products">Products</li></a>
+                <a href="#"><li class="nav__element" id="nav__log-in">Log In</li></a>
+                <a href="#"><li class="nav__element" id="nav__sign-up">Sign Up</li></a>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="section" id="section-1">
+
+            <div id="section-1__text-container">
+
+                <h3 class="sub-heading" id="section-1__h3">Lorem ipsum dolor sit amet!</h3>
+
+                <h1 class="main-heading" id="section-1__h1">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+
+                <div id="section-1__buttons">
+
+                    <div class="section-1__button-container" id="section-1__button-1-container">
+                        <button>Button 1</button>
+                    </div>
+
+                    <div class="section-1__button-container" id="section-1__button-2-container">
+                        <button>Button 2</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="section-1__images-container">
+
+                <div id="section-1__img-1">
+                    <img src="https://images.unsplash.com/photo-1520338801623-6b88fe32bbf2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="sky & mountains & lake">
+                </div>
+
+                <div id="section-1__img-2">
+                    <img src="https://images.unsplash.com/photo-1534599149175-c31133179de3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="sky & stars">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="section-2">
+    
+            <div class="section-2__subsection" id="section-2__img-1">
+                <img src="https://images.unsplash.com/photo-1615392030676-6c532fe0c302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="rosette nebula">
+            </div>
+
+            <div class="section-2__subsection" id="section-2__text-container">
+
+                <h3 class="sub-heading" id="section-2__sub-heading">Lorem ipsum dolor sit</h3>
+
+                <h2 class="heading" id="section-2__heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</h2>
+
+                <p class="section-2__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea rem consequuntur voluptatum in cumque, debitis illo aliquid maxime reprehenderit culpa rerum ab eligendi nobis quaerat officia aperiam quas non saepe dolorem minima eum dolore quisquam! Eum, aperiam ullam esse asperiores et repellat, impedit iste delectus nemo incidunt, sunt ea.</p>
+
+                <div id="section-2__items-list">
+
+                    <div class="section-2__item" id="section-2__item-1">
+                        <div class="section-2__item-heading-icon">
+                            <div class="section-2__icon-container">
+                                <svg id="section-2__icon-l-arrow" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                </svg>
+                            </div>
+                            <h4 class="section-2__item-heading">Lorem, ipsum</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo!</p>
+                    </div>
+                    
+                    <div class="section-2__item" id="section-2__item-2">
+                        <div class="section-2__item-heading-icon">
+                            <div class="section-2__icon-container">
+                                <svg id="section-2__icon-circle" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 5 1 Q 5 1 5 1 Q 9 1 9 5 Q 9 9 5 9 Q 1 9 1 5 Q 1 1 5 1 M 5 3 Q 3 3 3 5 Q 3 7 5 7 Q 7 7 7 5 Q 7 3 5 3">
+                                </svg>
+                            </div>
+                            <h4 class="section-2__item-heading">Lorem, ipsum dolor</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, temporibus.</p>
+                    </div>
+
+                    <div class="section-2__item" id="section-2__item-3">
+                        <div class="section-2__item-heading-icon">
+                            <div class="section-2__icon-container">
+                                <svg id="section-2__icon-cross" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 1 1 L 3 1 L 5 4 L 7 1 L 9 1 L 6.325 5.018 L 9 9 L 7 9 L 5 6 L 3 9 L 1 9 L 3.61 5.018 L 1 1">
+                                </svg>
+                            </div>
+                            <h4 class="section-2__item-heading">Lorem ipsum dolor sit</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+
+                </div>
+
+                <div id="section-2__button-link">
+
+                    <div class="section-1__button-container" id="section-2__button-1-container">
+                        <button>Button 1</button>
+                    </div>
+
+                    <div id="section-2__link-container">
+                        <a href="#" id="section-2__link"> Lorem Ipsum Random Link</a>
+
+                        <div class="section-2__icon-container">
+                            <svg id="section-2__link-icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="section-3">
+
+            <div id="section-3__carousel-container">
+
+                <div id="carousel-container__items-wrapper">
+
+                    <div id="carousel-container__items">
+
+                        <div class="carousel__item carousel__item-3">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="science">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus non perspiciatis cum accusantium mollitia quia atque suscipit quaerat! Magnam voluptatum adipisci nobis velit rem sit aspernatur accusamus, eaque saepe assumenda, distinctio reprehenderit quaerat, natus commodi perspiciatis voluptas! Eius saepe pariatur facere ea explicabo optio laudantium blanditiis suscipit? Repudiandae, harum.</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name Three</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item carousel__item-4">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80" alt="moon">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus corrupti, quo laboriosam nesciunt, pariatur rem ut, incidunt assumenda perferendis ipsa magni saepe error fugit consectetur recusandae dicta sint eum quaerat corporis laborum! Nesciunt esse iusto consequatur adipisci autem minima cupiditate doloribus fugit cum hic!</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name Four</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item carousel__item-1">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2NpZW5jZSUyMHdhbGxwYXBlciUyMHdpdGglMjBkZWVwJTIwc2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="astronaut">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus non perspiciatis cum accusantium mollitia quia atque suscipit quaerat! Magnam voluptatum adipisci nobis velit rem sit aspernatur accusamus, eaque saepe assumenda, distinctio reprehenderit quaerat, natus commodi perspiciatis voluptas! Eius saepe pariatur facere ea explicabo optio laudantium blanditiis suscipit? Repudiandae, harum.</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name One</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item item-active carousel__item-2">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="sunset">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium rem sed numquam veritatis reiciendis atque alias laborum, dicta, quas incidunt vero maxime neque illum blanditiis eaque consectetur provident quia optio temporibus perspiciatis mollitia veniam natus? Suscipit repellat sit nulla?</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name Two</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item carousel__item-3">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="science">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus non perspiciatis cum accusantium mollitia quia atque suscipit quaerat! Magnam voluptatum adipisci nobis velit rem sit aspernatur accusamus, eaque saepe assumenda, distinctio reprehenderit quaerat, natus commodi perspiciatis voluptas! Eius saepe pariatur facere ea explicabo optio laudantium blanditiis suscipit? Repudiandae, harum.</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name Three</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item carousel__item-4">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80" alt="moon">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus corrupti, quo laboriosam nesciunt, pariatur rem ut, incidunt assumenda perferendis ipsa magni saepe error fugit consectetur recusandae dicta sint eum quaerat corporis laborum! Nesciunt esse iusto consequatur adipisci autem minima cupiditate doloribus fugit cum hic!</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name Four</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item carousel__item-1">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2NpZW5jZSUyMHdhbGxwYXBlciUyMHdpdGglMjBkZWVwJTIwc2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="astronaut">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus non perspiciatis cum accusantium mollitia quia atque suscipit quaerat! Magnam voluptatum adipisci nobis velit rem sit aspernatur accusamus, eaque saepe assumenda, distinctio reprehenderit quaerat, natus commodi perspiciatis voluptas! Eius saepe pariatur facere ea explicabo optio laudantium blanditiis suscipit? Repudiandae, harum.</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name One</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel__item item-active carousel__item-2">
+
+                            <div class="carousel__item-img-container">
+                                <img class="carousel__item-img" src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="sunset">
+                            </div>
+
+                            <div class="carousel__item-paragraph-container">
+                                <p class="carousel__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium rem sed numquam veritatis reiciendis atque alias laborum, dicta, quas incidunt vero maxime neque illum blanditiis eaque consectetur provident quia optio temporibus perspiciatis mollitia veniam natus? Suscipit repellat sit nulla?</p>
+                            </div>
+
+                            <div class="carousel__item-name-container">
+                                <p class="carousel__item-name">Name Two</p>
+                            </div>
+
+                            <div class="carousel__item-description-container">
+                                <p class="carousel__item-description">- Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="carousel-container__controls">
+
+                    <div class="controls__arrow-container" id="controls__left-arrow-container">
+                        
+                        <button class="controls__arrow-button" id="carousel__left-button">
+                            <svg class="controls__arrow" id="controls__left-arrow" width="1.5rem" height="1.5rem" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 1 4 L 8 4 L 6 2 L 6 2 L 7 1 L 11 5 L 7 9 L 7 9 L 6 8 L 8 6 L 1 6 L 1 4">
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <div id="controls__dots-container">
+                        <div class="dot" id="dot-1"><button class="controls__dots-button" id="carousel__item-1-button"></button></div>
+                        <div class="dot item-active" id="dot-2"><button class="controls__dots-button" id="carousel__item-2-button"></button></div>
+                        <div class="dot" id="dot-3"><button class="controls__dots-button" id="carousel__item-3-button"></button></div>
+                        <div class="dot" id="dot-4"><button class="controls__dots-button" id="carousel__item-4-button"></button></div>
+                    </div>
+
+                    <div class="controls__arrow-container" id="controls__right-arrow-container">
+
+                        <button class="controls__arrow-button" id="carousel__right-button">
+                            <svg class="controls__arrow" id="controls__right-arrow" width="1.5rem" height="1.5rem" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 1 4 L 8 4 L 6 2 L 6 2 L 7 1 L 11 5 L 7 9 L 7 9 L 6 8 L 8 6 L 1 6 L 1 4">
+                            </svg>
+                        </button>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="section-4">
+
+            <div id="section-4__subsection-1">
+                
+                <div id="subsection-1__text-container">
+
+                    <div id="subsection-1__text-wrapper">
+
+                        <h3 class="sub-heading" id="section-4__sub-heading">Lorem ipsum dolor sit</h3>
+
+                        <h2 class="heading" id="section-4__heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</h2>
+
+                        <p id="section-4__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, quis possimus. Omnis obcaecati doloribus ipsum?</p>                    
+
+                        <div id="section-4__buttons">
+
+                            <div class="section-4__button-container active" id="section-4__button-1-container">
+                                
+                                <div class="section-4__icon-container">
+                                    <svg id="section-4__icon-1" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                    </svg>
+                                </div>
+
+                                <button>Lorem ipsum, dolor sit amet consectetur adipisicing.</button>
+                            </div>
+        
+                            <div class="section-4__button-container" id="section-4__button-2-container">
+                                
+                                <div class="section-4__icon-container">
+                                    <svg id="section-4__icon-2" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                    </svg>
+                                </div>
+
+                                <button>Lorem ipsum dolor sit amet</button>
+                            </div>
+
+                            <div class="section-4__button-container" id="section-4__button-3-container">
+                                
+                                <div class="section-4__icon-container">
+                                    <svg id="section-4__icon-3" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                    </svg>
+                                </div>
+                                
+                                <button>Lorem ipsum dolor sit amet consectetur</button>
+                            </div>
+        
+                        </div>
+
+                        <div id="section-4__button-4-container">
+                            <button>Button 1</button>
+                        </div>
+
+                        <p id="section-4__small-paragraph"><a href="#">Lorem ipsum dolor</a> sit amet, consectetur adipisicing elit. Quo consectetur voluptatibus in vero. Aperiam aliquid porro, quidem necessitatibus unde dolore.</p>                    
+
+                    </div>
+
+                </div>
+
+                <div id="subsection-1__image-container">
+
+                    <div class="section-4__image active" id="section-4__img-1">
+                        <img src="https://images.unsplash.com/photo-1625557089494-4989daa75618?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="large building">
+                    </div>
+
+                    <div class="section-4__image" id="section-4__img-2">
+                        <img src="https://images.unsplash.com/photo-1626076595436-36fafd41f1e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80" alt="large building">
+                    </div>
+
+                    <div class="section-4__image" id="section-4__img-3">
+                        <img src="https://images.unsplash.com/photo-1625852217901-e95aacdd37c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=322&q=80" alt="large building">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div id="section-4__subsection-2">
+
+                <div id="subsection-2__text-container">
+
+                    <div class="ss2__text">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem quia adipisci est.</p>
+                    </div>
+
+                    <div id="ss2__buttons">
+                        <div class="disabled" id="ss2__button-1-container">
+                            <button class="ss2__button">
+                                <svg id="ss2__left-arrow" width="1.5rem" height="1.5rem" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 1 4 L 8 4 L 6 2 L 6 2 L 7 1 L 11 5 L 7 9 L 7 9 L 6 8 L 8 6 L 1 6 L 1 4">
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="ss2__button-2-container">
+                            <button class="ss2__button">
+                                <svg id="ss2__right-arrow" width="1.5rem" height="1.5rem" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 1 4 L 8 4 L 6 2 L 6 2 L 7 1 L 11 5 L 7 9 L 7 9 L 6 8 L 8 6 L 1 6 L 1 4">
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="subsection-2__slider-container">
+                    <div id="subsection-2__slider-wrapper">
+                        <div id="slider-items">
+
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-1">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-2">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+    
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-3">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-4">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-5">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-6">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                            <div class="subsection-2__slider-item" id="ss2__slider-item-7">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                            <div class="subsection-2__slider-item " id="ss2__slider-item-8">
+                                
+                                <!-- ss2__si__ => subsection-2__slider-item__ -->
+
+                                <!-- https://image.flaticon.com/icons/png/512/4636/4636078.png
+                                https://image.flaticon.com/icons/png/512/4636/4636056.png
+                                https://image.flaticon.com/icons/png/512/4636/4636054.png -->
+
+                                <h2 class="ss2__si__heading">Lorem, ipsum</h2>
+
+                                <div class="ss2__si__image">
+                                    <img class="ss2__si__image-img" src="https://image.flaticon.com/icons/png/512/4636/4636091.png" alt="">
+                                </div>
+
+                                <div class="ss2__si__bullets">
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem ipsum dolor sit</p>
+
+                                    </div>
+                                    
+                                    <div class="ss2__si__bullet">                                         
+                                        <div class="ss2__si__icon-container">
+                                            <svg class="ss2__si__icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                                            </svg>
+                                        </div>
+
+                                        <p class="ss2__si_bullet-text">Lorem, ipsum dolor.</p>
+
+                                    </div>
+                                </div>
+
+                                <p class="ss2__si__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores blanditiis exercitationem pariatur mollitia culpa doloribus sequi natus nihil fugiat</p>
+
+                                <div class="ss2__si__button-container">
+                                    <button class="ss2__si__button">Button 1</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ss2__info-container">
+                    <p id="ss2__info-text">*Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ad possimus doloribus.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="section-5">
+
+            <h3 id="section-5__heading">Lorem ipsum dolor sit amet consectetur?</h3>
+
+            <div class="s5__search-bar-container">
+
+                <div class="s5__search-bar__items" id="s5__search-bar-1__items">
+                    <input class="s5__search-bar__input" type="text" required pattern=".*\S.*"></input>
+                    <span class="s5__search-placeholder" id="s5__search-bar-1__placeholder">Option for search box 1</span>
+                </div>
+
+                <div class="s5__search-bar__icon">
+                    <svg class="s5__search-icon" id="s5__icon-1" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 5 1 Q 5 1 5 1 Q 9 1 9 5 Q 9 9 5 9 Q 1 9 1 5 Q 1 1 5 1 M 5 3 Q 3 3 3 5 Q 3 7 5 7 Q 7 7 7 5 Q 7 3 5 3">
+                    </svg>
+                </div>
+            </div>
+
+            <div class="s5__search-bar-container">
+
+                <div class="s5__search-bar__items" id="s5__search-bar-2__items">
+                    <input class="s5__search-bar__input" type="text" required pattern=".*\S.*"></input>
+                    <span class="s5__search-placeholder" id="s5__search-bar-2__placeholder">Option for search box 2</span>
+                </div>
+
+                <div class="s5__search-bar__icon">
+                    <svg class="s5__search-icon" id="s5__icon-2" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 5 1 Q 5 1 5 1 Q 9 1 9 5 Q 9 9 5 9 Q 1 9 1 5 Q 1 1 5 1 M 5 3 Q 3 3 3 5 Q 3 7 5 7 Q 7 7 7 5 Q 7 3 5 3">
+                    </svg>
+                </div>
+            </div>
+
+            <div id="s5__button-container">
+                <button>Button 1</button>
+            </div>
+
+        </div>
+
+        <div class="section" id="section-6">
+
+            <div id="s6__logo-text-container">
+
+                <div id="s6__logo">
+                    <svg id="s6" width="6rem" height="3rem" viewBox="0 0 37 22" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 5 5 L 5 21 L 13 21 C 12 20 12 19 12 18 L 8 18 L 8 6 L 5 5 M 13 15 L 13 18 C 13 20 13 20 14 21 C 15 22 17 22 18 21 C 19 20 19 20 19 18 L 19 15 C 19 11 13 11 13 15 M 16 14 C 17 14 17 15 17 15 L 17 19 C 17 20 16 20 16 20 C 16 20 15 20 15 19 L 15 15 C 15 14 16 14 16 14 M 20 15 L 20 19 C 20 22 27 22 27 19 L 27 17 L 24 17 L 24 18 L 25 18 L 25 19 C 25 20 22 20 22 19 L 22 15 C 22 13 25 13 25 15 L 27 15 C 27 11 20 11 20 15 M 28 15 L 28 19 C 28 23 34 23 34 19 L 34 15 C 34 11 28 11 28 15 M 30 15 C 30 14 32 14 32 15 L 32 19 C 32 20 30 20 30 19 L 30 15">
+                    </svg>
+                </div>
+
+                <div id="s6__logo-text">
+                    <h2>PLUS</h2>
+                </div>
+
+            </div>
+
+            <div id="s6__scroll-heading">
+
+                <h2 id="s6__scroll-heading__static">This displays words like</h2>
+
+                <div id="s6__scroll-heading__moving-container">
+                    <div id="s6__scroll-heading__moving-slider">
+                        <h2 class="s6__slider-text">First</h2>
+                        <h2 class="s6__slider-text">Second</h2>
+                        <h2 class="s6__slider-text">Third</h2>
+                        <h2 class="s6__slider-text">Fourth</h2>
+                        <h2 class="s6__slider-text">Fifth</h2>
+                        <h2 class="s6__slider-text">First</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="s6__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis, architecto fugiat officiis doloremque perferendis.</p>
+
+            <div id="s6__link-container">
+                <a href="#" id="s6__link">This is a link to top of page</a>
+
+                <div id="s6__icon-container">
+                    <svg id="s6__link-icon" width="1rem" height="1rem" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 0 4 L 7 4 L 7 2 L 10 5 L 7 8 L 7 6 L 0 6 L 0 4">
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <script src="carousel_control_full.js"></script>
+    <script src="changing_pictures.js"></script>
+    <script src="slider_section-4.js"></script>
+    <script src="scroll_text.js"></script>
+
+</body>
+</html>
