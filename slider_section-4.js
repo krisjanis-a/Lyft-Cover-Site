@@ -28,6 +28,12 @@ function translateLeft() {
     rightButtonS4.classList.remove("disabled");
 
     removeActiveSliderItem();
+
+    if(position === 0){
+        leftButtonS4.removeEventListener("click", translateLeft);
+        leftButtonS4.classList.add("disabled");
+        return;
+    }
 };
 
 function translateRight() {
