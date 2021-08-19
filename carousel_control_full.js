@@ -20,62 +20,6 @@ let offsetBelow1000px = 0; // OFFSET FOR VIEWPORT WIDTH < 1000PX | MOVES SLIDER 
 
 let activeSectionIndex = 3;
 
-// function changesOnLoadS3() {
-//   if (window.innerWidth <= 1000) {
-//     slider.style.transition = "none";
-//     offsetBelow1000px = 12.5;
-//     slider.style.transform =
-//       "translate(" +
-//       (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
-//       "%)";
-//     setTimeout(function () {
-//       slider.style.transition = "transform 1s";
-//     });
-//   }
-//   if (window.innerWidth > 1000) {
-//     offsetBelow1000px = 0;
-//     slider.style.transition = "none";
-//     slider.style.transform =
-//       "translate(" +
-//       (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
-//       "%)";
-//     setTimeout(function () {
-//       slider.style.transition = "transform 1s";
-//     });
-//   }
-//   // console.log(
-//   //   "innerwidth on load: " + window.innerWidth + "; offset: " + offset
-//   // );
-// }
-
-// function changesOnResizeS3() {
-//   if (window.innerWidth <= 1000) {
-//     // console.log("innerwidth smaller or equal to 1000px");
-//     slider.style.transition = "none";
-//     offsetBelow1000px = 12.5;
-//     slider.style.transform =
-//       "translate(" +
-//       (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
-//       "%)";
-//     setTimeout(function () {
-//       slider.style.transition = "transform 1s";
-//     });
-//   }
-
-//   if (window.innerWidth > 1000) {
-//     // console.log("innerwidth larger than 1000px");
-//     slider.style.transition = "none";
-//     offsetBelow1000px = 0;
-//     slider.style.transform =
-//       "translate(" +
-//       (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
-//       "%)";
-//     setTimeout(function () {
-//       slider.style.transition = "transform 1s";
-//     });
-//   }
-// }
-
 // BUTTON TO MOVE CAROUSEL TO LEFT
 
 leftButton.addEventListener("click", function () {

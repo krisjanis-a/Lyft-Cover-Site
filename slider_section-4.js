@@ -108,162 +108,69 @@ const item6sliderS4 = document.querySelector("#ss2__slider-item-6");
 const item7sliderS4 = document.querySelector("#ss2__slider-item-7");
 const item8sliderS4 = document.querySelector("#ss2__slider-item-8");
 
-item1sliderS4.addEventListener("click", function (e) {
+function itemSliderAddActiveClass(itemNum, event) {
+  let sliderItems = {
+    1: item1sliderS4,
+    2: item2sliderS4,
+    3: item3sliderS4,
+    4: item4sliderS4,
+    5: item5sliderS4,
+    6: item6sliderS4,
+    7: item7sliderS4,
+    8: item8sliderS4,
+  };
+
+  let item = sliderItems[itemNum];
+
+  console.log(item);
+
   if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
+    event.target.classList.contains("ss2__si__button-container") ||
+    event.target.classList.contains("ss2__si__button")
   ) {
     return;
   }
 
-  if (item1sliderS4.classList.contains("active")) {
+  if (item.classList.contains("active")) {
     removeActiveSliderItem();
     return;
   }
 
-  if (!item1sliderS4.classList.contains("active")) {
+  if (!item.classList.contains("active")) {
     removeActiveSliderItem();
-    item1sliderS4.classList.add("active");
+    item.classList.add("active");
     return;
   }
+}
+
+item1sliderS4.addEventListener("click", function (e) {
+  itemSliderAddActiveClass(1, e);
 });
 
 item2sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item2sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item2sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item2sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(2, e);
 });
 
 item3sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item3sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item3sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item3sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(3, e);
 });
 
 item4sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item4sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item4sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item4sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(4, e);
 });
 
 item5sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item5sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item5sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item5sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(5, e);
 });
 
 item6sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item6sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item6sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item6sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(6, e);
 });
 
 item7sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item7sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item7sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item7sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(7, e);
 });
 
 item8sliderS4.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("ss2__si__button-container") ||
-    e.target.classList.contains("ss2__si__button")
-  ) {
-    return;
-  }
-
-  if (item8sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    return;
-  }
-
-  if (!item8sliderS4.classList.contains("active")) {
-    removeActiveSliderItem();
-    item8sliderS4.classList.add("active");
-    return;
-  }
+  itemSliderAddActiveClass(8, e);
 });

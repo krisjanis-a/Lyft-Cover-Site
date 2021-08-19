@@ -88,5 +88,5 @@ function changesOnResizeS4() {
   itemWidth =
     Number.parseInt(window.getComputedStyle(sliderS4Item).marginRight) +
     Number.parseInt(window.getComputedStyle(sliderS4Item).width);
-  //   console.log("item width: " + itemWidth);
+  // console.log("item width: " + itemWidth);
 }
