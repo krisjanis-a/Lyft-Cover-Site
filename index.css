@@ -574,7 +574,7 @@ button {
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  padding-top: 5rem;
+  padding-top: 2rem;
   background-color: #33f1;
 }
 
@@ -582,30 +582,24 @@ button {
 
 #section-4__subsection-1 {
   display: flex;
-  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 #subsection-1__text-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  padding-left: 10rem;
   align-items: center;
-  flex-basis: 50%;
+  padding-left: 10%;
+  width: 50%;
 }
 
 #subsection-1__text-wrapper {
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  width: 30rem;
-}
-
-#subsection-1__image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 50%;
+  width: 100%;
 }
 
 #section-4__sub-heading {
@@ -620,13 +614,17 @@ button {
   padding-bottom: 1.5rem;
 }
 
-#section-4__small-paragraph {
+.section-4__small-paragraph {
   font-size: 0.75rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 0;
 }
 
-#section-4__small-paragraph a {
+.section-4__small-paragraph.mobile {
+  display: none;
+  padding: 1rem 0;
+}
+
+.section-4__small-paragraph a {
   color: #000;
 }
 
@@ -695,7 +693,16 @@ button {
   cursor: pointer;
 }
 
+#subsection-1__image-container {
+  display: flex;
+  padding-right: 5%;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
 .section-4__image {
+  display: none;
   visibility: hidden;
   width: 0;
   height: none;
@@ -704,19 +711,19 @@ button {
 }
 
 .section-4__image.active {
+  display: block;
   visibility: visible;
   overflow: hidden;
   opacity: 1;
-  width: 50%;
-  height: 80%;
+  width: 80%;
+  max-width: fit-content;
+  max-height: 80%;
   border-radius: 2rem;
 }
 
 .section-4__image.active img {
-  object-fit: fill;
-  height: 100%;
+  object-fit: scale-down;
   width: 100%;
-  border-radius: 2rem;
 }
 
 /* SECTION 4 - SUBSECTION 2 */
@@ -738,12 +745,12 @@ button {
 }
 
 .ss2__text {
-  padding-left: 10rem;
+  padding-left: 10%;
 }
 
 .ss2__text h2 {
   padding: 1rem 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .ss2__text p {
@@ -757,18 +764,24 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  margin-right: 13rem;
+  margin-right: 5%;
 }
 
 .ss2__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background: none;
 }
 
 #ss2__button-1-container {
   background-color: none;
-  height: 1.5rem;
-  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   padding: 0.35rem;
   margin: 0 3rem;
@@ -788,9 +801,12 @@ button {
 }
 
 #ss2__button-2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #33f;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   padding: 0.75rem;
   transition: 0.25s;
@@ -828,7 +844,7 @@ button {
   flex-direction: row;
   justify-content: flex-start;
 
-  margin-left: 10rem;
+  margin-left: 10%;
 
   flex-shrink: 0;
   flex: 1;
@@ -856,7 +872,6 @@ button {
   height: 17rem;
 
   transition: all 0.5s;
-  /* transform: translateX(-17rem); */
 
   border-radius: 2rem;
   box-shadow: 0 0 2px #0007;
@@ -868,7 +883,6 @@ button {
 }
 
 .subsection-2__slider-item.active {
-  /* flex-basis: 20rem; */
   width: 20rem;
   height: 20rem;
   margin-bottom: 0.5rem;
@@ -961,7 +975,6 @@ button {
 }
 
 .ss2__si__button-container {
-  /* display: none; */
   transform: scale(0);
   height: 0;
   visibility: hidden;
@@ -979,7 +992,7 @@ button {
 
 #ss2__info-container {
   align-self: flex-start;
-  margin-left: 10rem;
+  margin-left: 10%;
   padding: 2rem 0;
 }
 
@@ -1353,6 +1366,90 @@ button {
     width: 800%;
   }
 
+  /* SECTION 4 */
+
+  /* SECTION 4 - SUBSECTION 1 */
+
+  #section-4__subsection-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #subsection-1__text-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #subsection-1__text-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-4__sub-heading {
+    text-align: center;
+  }
+
+  #section-4__heading {
+    text-align: center;
+  }
+
+  #section-4__paragraph {
+    text-align: center;
+  }
+
+  .section-4__small-paragraph.desktop {
+    display: none;
+  }
+
+  .section-4__small-paragraph.mobile {
+    display: block;
+    text-align: center;
+    width: 60%;
+  }
+
+  #section-4__buttons {
+    align-items: center;
+  }
+
+  #subsection-1__image-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* SECTION 4 - SUBSECTION 2 */
+
+  #subsection-2__text-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0 0;
+  }
+
+  .ss2__text {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .ss2__text h2 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .ss2__text p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  #ss2__buttons {
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  #ss2__button-1-container {
+    margin: 0;
+    margin-right: 3rem;
+  }
+
   /* SECTION-5 */
 
   #section-5 {
@@ -1423,6 +1520,75 @@ button {
     height: auto;
     object-fit: contain;
     border-radius: 0 5rem;
+  }
+
+  /* SECTION 4 */
+
+  /* SECTION 4 - SUBSECTION 1 */
+
+  #section-4__subsection-1 {
+    flex-direction: column;
+  }
+
+  #subsection-1__text-container {
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+
+  #subsection-1__image-container {
+    width: 80%;
+  }
+
+  .section-4__small-paragraph.mobile {
+    text-align: center;
+  }
+
+  /* SLIDER */
+
+  .subsection-2__slider-item {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .subsection-2__slider-item.active {
+    width: 17rem;
+    height: 17rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .subsection-2__slider-item.active .ss2__si__bullets {
+    display: none;
+    transition: 0.5s;
+  }
+
+  .subsection-2__slider-item.active .ss2__si__text {
+    font-size: 0.75rem;
+  }
+
+  .ss2__si__heading {
+    font-size: 1.2rem;
+    padding: 1.3rem 0;
+  }
+
+  .ss2__si_bullet-text {
+    font-size: 0.65rem;
+  }
+
+  .ss2__si__icon {
+    height: 0.65rem;
+    width: 0.65rem;
+  }
+
+  .ss2__si__button-container button {
+    font-size: 0.8rem;
+  }
+
+  #ss2__info-text {
+    font-size: 0.55rem;
   }
 }
 
