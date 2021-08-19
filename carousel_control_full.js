@@ -13,56 +13,90 @@ const buttonItem4 = document.querySelector("#dot-4");
 
 let offset = 12.5;
 
-let offsetBelow1000px = 0;
-
-// window.onload = changesOnLoad;
-
-window.onresize = changesOnResize;
-
-// function changesOnLoad() {
-//   // if (window.innerWidth <= 1000) {
-//   //   offset = 12.5;
-//   // }
-//   // if (window.innerWidth <= 1000) {
-//   //   offset = 100;
-//   // }
-//   console.log(
-//     "innerwidth on load: " + window.innerWidth + "; offset: " + offset
-//   );
-// }
-
-function changesOnResize() {
-  offsetBelow1000px = 37.5;
-
-  // if (window.innerWidth > 1000) {
-  //   console.log("innerwidth larger than 1000px");
-  //   offset = 12.5;
-  // }
-  // if (window.innerWidth <= 1000) {
-  //   console.log("innerwidth smaller or equal to 1000px");
-  //   offset = 100;
-  // }
-}
+let offsetBelow1000px = 0; // OFFSET FOR VIEWPORT WIDTH < 1000PX | MOVES SLIDER BY ONE ITEM WIDTH SO ACTIVE ITEM IS IN CENTER
 
 // ACTIVE SECTION INDEX => BEGINS FROM 0 !!! Items and corresponding indices:
 // ITEM-3 - 0 | ITEM-4 - 1 | ITEM-1 - 2 | ITEM-2 - 3 | ITEM-3 - 4 | | ITEM-4 - 5 | ITEM-1 - 6 | ITEM-2 - 7
 
 var activeSectionIndex = 3;
 
+window.onload = changesOnLoad;
+
+window.onresize = changesOnResize;
+
+function changesOnLoad() {
+  if (window.innerWidth <= 1000) {
+    slider.style.transition = "none";
+    offsetBelow1000px = 12.5;
+    slider.style.transform =
+      "translate(" +
+      (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+      "%)";
+    setTimeout(function () {
+      slider.style.transition = "transform 1s";
+    });
+  }
+  if (window.innerWidth > 1000) {
+    offsetBelow1000px = 0;
+    slider.style.transition = "none";
+    slider.style.transform =
+      "translate(" +
+      (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+      "%)";
+    setTimeout(function () {
+      slider.style.transition = "transform 1s";
+    });
+  }
+  // console.log(
+  //   "innerwidth on load: " + window.innerWidth + "; offset: " + offset
+  // );
+}
+
+function changesOnResize() {
+  if (window.innerWidth <= 1000) {
+    // console.log("innerwidth smaller or equal to 1000px");
+    slider.style.transition = "none";
+    offsetBelow1000px = 12.5;
+    slider.style.transform =
+      "translate(" +
+      (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+      "%)";
+    setTimeout(function () {
+      slider.style.transition = "transform 1s";
+    });
+  }
+
+  if (window.innerWidth > 1000) {
+    // console.log("innerwidth larger than 1000px");
+    slider.style.transition = "none";
+    offsetBelow1000px = 0;
+    slider.style.transform =
+      "translate(" +
+      (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+      "%)";
+    setTimeout(function () {
+      slider.style.transition = "transform 1s";
+    });
+  }
+}
+
 // BUTTON TO MOVE CAROUSEL TO LEFT
 
 leftButton.addEventListener("click", function () {
-  console.log("left");
+  // console.log("left");
 
   activeSectionIndex -= 1;
 
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
-  console.log(
-    "calculated absolute offset: " + -offset * (activeSectionIndex - 1)
-  );
-  console.log("active section index: " + activeSectionIndex);
+  // console.log(
+  //   "calculated absolute offset: " +
+  //     (-offsetBelow1000px + -offset * (activeSectionIndex - 1))
+  // );
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.addEventListener("transitionstart", disableAllButtons);
 
@@ -83,17 +117,20 @@ leftButton.addEventListener("click", function () {
 // BUTTON TO MOVE CAROUSEL TO RIGHT
 
 rightButton.addEventListener("click", function () {
-  console.log("right");
+  // console.log("right");
 
   activeSectionIndex += 1;
 
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
-  console.log(
-    "calculated absolute offset: " + -offset * (activeSectionIndex - 1)
-  );
-  console.log("active section index: " + activeSectionIndex);
+  // console.log(
+  //   "calculated absolute offset: " +
+  //     (-offsetBelow1000px + -offset * (activeSectionIndex - 1))
+  // );
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.addEventListener("transitionstart", disableAllButtons);
 
@@ -114,14 +151,16 @@ rightButton.addEventListener("click", function () {
 // WHEN DISPLAYING ITEM-4#5 AND CLICKING MOVE RIGHT (MOVE FROM ITEM-4#5 => ITEM-1#6) - JUMPS FROM ITEM-1#6 => ITEM-1#2 WITHOUT VISIBLE TRANSITION TO ENSURE INFINITE SCROLL
 
 function rollBackwards() {
-  console.log("roll backwards");
+  // console.log("roll backwards");
 
   activeSectionIndex = 2;
-  console.log("active section index: " + activeSectionIndex);
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.style.transition = "none";
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
   setTimeout(function () {
     slider.style.transition = "transform 1s";
@@ -133,14 +172,16 @@ function rollBackwards() {
 // WHEN DISPLAYING ITEM-1#2 AND CLICKING MOVE LEFT (MOVE FROM ITEM-1#2 => ITEM-4#1) - JUMPS FROM ITEM-4#1 => ITEM-4#5 WITHOUT VISIBLE TRANSITION TO ENSURE INFINITE SCROLL
 
 function rollForwards() {
-  console.log("roll forwards");
+  // console.log("roll forwards");
 
   activeSectionIndex = 5;
-  console.log("active section index: " + activeSectionIndex);
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.style.transition = "none";
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
   setTimeout(function () {
     slider.style.transition = "transform 1s";
@@ -153,8 +194,10 @@ buttonItem1.addEventListener("click", function () {
   activeSectionIndex = 2;
 
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
-  console.log("active section index: " + activeSectionIndex);
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.addEventListener("transitionstart", disableAllButtons);
   setActiveSection();
@@ -164,10 +207,12 @@ buttonItem1.addEventListener("click", function () {
 
 buttonItem2.addEventListener("click", function () {
   activeSectionIndex = 3;
-  console.log("active section index: " + activeSectionIndex);
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
   slider.addEventListener("transitionstart", disableAllButtons);
   setActiveSection();
@@ -177,10 +222,12 @@ buttonItem2.addEventListener("click", function () {
 
 buttonItem3.addEventListener("click", function () {
   activeSectionIndex = 4;
-  console.log("active section index: " + activeSectionIndex);
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
   slider.addEventListener("transitionstart", disableAllButtons);
   setActiveSection();
@@ -190,10 +237,12 @@ buttonItem3.addEventListener("click", function () {
 
 buttonItem4.addEventListener("click", function () {
   activeSectionIndex = 5;
-  console.log("active section index: " + activeSectionIndex);
+  // console.log("active section index: " + activeSectionIndex);
 
   slider.style.transform =
-    "translate(" + -offset * (activeSectionIndex - 1) + "%)";
+    "translate(" +
+    (-offsetBelow1000px + -offset * (activeSectionIndex - 1)) +
+    "%)";
 
   slider.addEventListener("transitionstart", disableAllButtons);
   setActiveSection();
