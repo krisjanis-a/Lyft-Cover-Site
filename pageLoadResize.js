@@ -3,13 +3,37 @@ window.onload = pageLoad;
 window.onresize = pageResize;
 
 function pageLoad() {
+  changesOnLoadHeader();
   changesOnLoadS3();
   changesOnLoadS4();
 }
 
 function pageResize() {
+  changesOnResizeHeader();
   changesOnResizeS3();
   changesOnResizeS4();
+}
+
+// SETUP FOR HEADER ON LOAD AND RESIZE
+
+function changesOnResizeHeader() {
+  if (window.innerWidth > 1000) {
+    barsIcon.classList.add("active");
+    timesIcon.classList.remove("active");
+    navMenuMobile.style.left = "-100%";
+    navMenuMobile.style.opacity = "0";
+    menuActive = false;
+    return;
+  }
+}
+
+function changesOnLoadHeader() {
+  barsIcon.classList.add("active");
+  timesIcon.classList.remove("active");
+  navMenuMobile.style.left = "-100%";
+  navMenuMobile.style.opacity = "0";
+  menuActive = false;
+  return;
 }
 
 // SETUP ON PAGE LOAD SECTION 3
@@ -85,8 +109,13 @@ function changesOnLoadS4() {
 // SETUP ON RESIZE SECTION 4
 
 function changesOnResizeS4() {
-  itemWidth =
-    Number.parseInt(window.getComputedStyle(sliderS4Item).marginRight) +
-    Number.parseInt(window.getComputedStyle(sliderS4Item).width);
-  // console.log("item width: " + itemWidth);
+  sliderS4Item.addEventListener("transitionend", checkItemWidth);
+
+  function checkItemWidth() {
+    itemWidth =
+      Number.parseInt(window.getComputedStyle(sliderS4Item).marginRight) +
+      Number.parseInt(window.getComputedStyle(sliderS4Item).width);
+    // console.log("item width: " + itemWidth);
+    sliderS4Item.removeEventListener("transitionend", checkItemWidth);
+  }
 }

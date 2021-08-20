@@ -9,27 +9,28 @@
 
 html {
   width: 100vw;
-  /* min-width: 250px; */
+  /* background-color: black; */
   font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
 }
 
 body {
-  /* overflow-x: scroll; */
+  background-color: white;
   width: 100%;
   margin: 0 auto;
   max-width: 1500px;
-  overflow-x: hidden;
 }
 
 button {
   font-family: "Raleway", sans-serif;
 }
 
-.header {
+header {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.header {
   background-color: white;
 
   display: flex;
@@ -131,6 +132,14 @@ button {
   text-transform: uppercase;
 }
 
+.nav__list.desktop {
+  display: flex;
+}
+
+.nav__list.mobile {
+  display: none;
+}
+
 .nav__list > a {
   text-decoration: none;
   color: #333;
@@ -179,9 +188,10 @@ button {
 
 /* SECTIONS */
 
-/* main {
-  display: none;
-} */
+main {
+  /* display: none; */
+  overflow-x: hidden;
+}
 
 /* SECTION 1 */
 
@@ -1212,22 +1222,57 @@ button {
     width: 100%;
   }
 
-  .nav__list {
+  .nav__list.desktop {
+    display: none;
+  }
+
+  .nav__list.mobile {
+    background-color: white;
     position: absolute;
     top: 4rem;
+    left: 0;
     left: -100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    opacity: 0;
+    height: fit-content;
+    /* opacity: 0; */
     transition: all 0.5s ease-out;
   }
 
-  .nav__element,
-  .nav__list a:last-child {
+  .nav__element {
     border: none;
+    padding: 1.5rem 0;
+  }
+
+  .nav__list a {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    text-decoration: none;
+    color: #333;
+    height: 100%;
+    transition: 0.25s;
+  }
+
+  .nav__list a:hover {
+    border-top: #0005 solid 1px;
+    border-bottom: #0005 solid 1px;
+  }
+
+  .nav__list a:first-child {
+    border-top: none;
+  }
+
+  .nav__list a:last-child {
+    border-bottom: #0005 solid 1px;
+  }
+  .nav__list a:last-child {
+    border-bottom: #0005 solid 1px;
   }
 
   .nav-menu__icon_container {
@@ -1236,17 +1281,38 @@ button {
     width: 2rem;
   }
 
+  .toggleNavMenuButton {
+    border: none;
+    outline: none;
+    background: none;
+    height: 100%;
+    width: 100%;
+  }
+
   .fas {
     font-size: 2rem;
     color: #333;
+    transition: 0.25s;
+  }
+
+  .fas:hover {
+    color: #33f;
   }
 
   .fas.fa-bars {
+    display: none;
+  }
+
+  .fas.fa-bars.active {
     display: block;
   }
 
   .fas.fa-times {
     display: none;
+  }
+
+  .fas.fa-times.active {
+    display: block;
   }
 
   /* MAIN SECTIONS */
@@ -1625,31 +1691,7 @@ button {
     width: 100%;
   }
 
-  .nav__list {
+  .nav__list.mobile {
     top: 8rem;
-  }
-
-  .nav__element,
-  .nav__list a:last-child {
-    border: none;
-  }
-
-  .nav-menu__icon_container {
-    display: block;
-    height: 2rem;
-    width: 2rem;
-  }
-
-  .fas {
-    font-size: 2rem;
-    color: #333;
-  }
-
-  .fas.fa-bars {
-    display: block;
-  }
-
-  .fas.fa-times {
-    display: none;
   }
 }

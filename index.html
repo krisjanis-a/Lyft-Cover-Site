@@ -11,7 +11,9 @@
 
 <body>
 
-    <header class="header">
+    <header>
+
+        <div class="header">
 
         <div id="header__logo-container">
             <svg id="header__logo" width="6rem" height="3rem" viewBox="0 0 37 22" xmlns="http://www.w3.org/2000/svg">
@@ -36,11 +38,20 @@
             </div>
 
             <div class="nav-menu__icon_container">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times"></i>
+                <button class="toggleNavMenuButton">
+                    <i class="fas fa-bars active"></i>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
 
-            <ul class="nav__list">
+            <ul class="nav__list desktop">
+                <a href="#"><li class="nav__element" id="nav__about">About</li></a>
+                <a href="#"><li class="nav__element" id="nav__products">Products</li></a>
+                <a href="#"><li class="nav__element" id="nav__log-in">Log In</li></a>
+                <a href="#"><li class="nav__element" id="nav__sign-up">Sign Up</li></a>
+            </ul>
+            
+            <ul class="nav__list mobile">
                 <a href="#"><li class="nav__element" id="nav__about">About</li></a>
                 <a href="#"><li class="nav__element" id="nav__products">Products</li></a>
                 <a href="#"><li class="nav__element" id="nav__log-in">Log In</li></a>
@@ -49,7 +60,8 @@
 
         </div>
 
-    </header>
+    </div>
+</header>
 
     <main>
 
@@ -959,6 +971,7 @@
         
     </main>
 
+    <script src="nav-menu.js"></script>
     <script src="carousel_control_full.js"></script>
     <script src="changing_pictures.js"></script>
     <script src="slider_section-4.js"></script>
