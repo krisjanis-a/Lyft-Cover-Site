@@ -25,9 +25,18 @@ button {
 }
 
 header {
+  /* position: fixed; */
+  /* width: 100%; */
   position: sticky;
   top: 0;
+  opacity: 1;
   z-index: 10;
+  transition: all 0.3s ease-out;
+}
+
+header.hide {
+  opacity: 0;
+  top: -4rem;
 }
 
 .header {
