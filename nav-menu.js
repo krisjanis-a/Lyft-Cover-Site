@@ -27,7 +27,7 @@ navMenuMobile.addEventListener("click", () => {
 function toggleInactive() {
   barsIcon.classList.add("active");
   timesIcon.classList.remove("active");
-  navMenuMobile.style.left = "-100%";
+  navMenuMobile.style.right = "-100%";
   navMenuMobile.style.opacity = "0";
   menuActive = !menuActive;
   return;
@@ -36,7 +36,7 @@ function toggleInactive() {
 function toggleActive() {
   barsIcon.classList.remove("active");
   timesIcon.classList.add("active");
-  navMenuMobile.style.left = "0";
+  navMenuMobile.style.right = "0";
   navMenuMobile.style.opacity = "1";
   menuActive = !menuActive;
   return;

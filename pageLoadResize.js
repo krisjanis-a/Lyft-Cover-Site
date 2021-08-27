@@ -20,7 +20,7 @@ function changesOnResizeHeader() {
   if (window.innerWidth > 1000) {
     barsIcon.classList.add("active");
     timesIcon.classList.remove("active");
-    navMenuMobile.style.left = "-100%";
+    navMenuMobile.style.right = "-100%";
     navMenuMobile.style.opacity = "0";
     menuActive = false;
     return;
@@ -30,7 +30,7 @@ function changesOnResizeHeader() {
 function changesOnLoadHeader() {
   barsIcon.classList.add("active");
   timesIcon.classList.remove("active");
-  navMenuMobile.style.left = "-100%";
+  navMenuMobile.style.right = "-100%";
   navMenuMobile.style.opacity = "0";
   menuActive = false;
   return;
